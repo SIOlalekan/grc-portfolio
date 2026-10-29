@@ -29,6 +29,7 @@ prompt = (
     + "Use concise tables, bullet points and short paragraphs where appropriate. "
     + "Do not repeat information unnecessarily."
 )
+messages = [{"role": "user", "content": prompt}]
 parts = []
 
 for attempt in range(3):
