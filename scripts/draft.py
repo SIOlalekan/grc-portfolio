@@ -16,11 +16,15 @@ folder.mkdir(parents=True, exist_ok=True)
 
 client = Anthropic()
 msg = client.messages.create(
-    model="claude-sonnet-5-5", max_tokens=4000,
+    model="claude-sonnet-5-5", max_tokens=8000,
     messages=[{"role": "user", "content": item["instruction"] +
       "\nUse public frameworks only. Original wording. "
       "Mark any placeholders clearly. Start with a note that this is an "
       "AI-assisted draft pending human review."}])
+if msg.stop_reason == "max_tokens":
+    raise RuntimeError(
+        "Draft generation was truncated because the model reached the maximum output token limit."
+    )
 text = "\n".join(
     block.text
     for block in msg.content
