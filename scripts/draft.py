@@ -19,15 +19,16 @@ client = Anthropic()
 prompt = (
     item["instruction"]
     + "\nUse public frameworks only. Use original wording. "
-    + "Mark any placeholders clearly. Start with a note that this is an "
-    + "AI-assisted draft pending human review. "
+    + "Mark any placeholders clearly. "
+    + "Start the document with: "
+    + "'DRAFT – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL'. "
+    + "Do not state or imply that the document has been formally approved, "
+    + "certified, accredited or adopted by an organisation. "
     + "Produce a complete but concise document. "
     + "Prioritise complete coverage of every requested section over lengthy explanation. "
     + "Use concise tables, bullet points and short paragraphs where appropriate. "
     + "Do not repeat information unnecessarily."
 )
-
-messages = [{"role": "user", "content": prompt}]
 parts = []
 
 for attempt in range(3):
