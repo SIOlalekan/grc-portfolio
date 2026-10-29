@@ -14,31 +14,70 @@ folder.mkdir(parents=True, exist_ok=True)
     f"# Brief\nAuthor: {q['author']} ({q['role']})\n"
     f"Date: {datetime.date.today()}\n\nInstruction:\n{item['instruction']}\n")
 
-client = Anthropic()
-msg = client.messages.create(
-    model="claude-sonnet-5-5", max_tokens=8000,
-    messages=[{"role": "user", "content": item["instruction"] +
-    "\nUse public frameworks only. Use original wording. "
-    "Mark any placeholders clearly. Start with a note that this is an "
-    "AI-assisted draft pending human review. "
-    "Produce a COMPLETE but concise document. "
-    "The entire response must fit comfortably within 6,500 output tokens. "
-    "Prioritise complete coverage of every requested section over lengthy explanation. "
-    "Use concise tables, bullet points and short paragraphs where appropriate. "
-    "Do not repeat information unnecessarily. "
-    "Do not stop halfway through a section. "
-    "Make sure the document has a proper ending and all requested sections are completed."
-}])
-if msg.stop_reason == "max_tokens":
-    raise RuntimeError(
-        "Draft generation was truncated because the model reached the maximum output token limit."
-    )
-text = "\n".join(
-    block.text
-    for block in msg.content
-    if getattr(block, "type", None) == "text"
-    and hasattr(block, "text")
+client = anthropic.Anthropic()
+
+prompt = (
+    item["instruction"]
+    + "\nUse public frameworks only. Use original wording. "
+    + "Mark any placeholders clearly. Start with a note that this is an "
+    + "AI-assisted draft pending human review. "
+    + "Produce a complete but concise document. "
+    + "Prioritise complete coverage of every requested section over lengthy explanation. "
+    + "Use concise tables, bullet points and short paragraphs where appropriate. "
+    + "Do not repeat information unnecessarily."
 )
+
+messages = [{"role": "user", "content": prompt}]
+parts = []
+
+for attempt in range(3):
+    msg = client.messages.create(
+        model="claude-sonnet-5-5",
+        max_tokens=8000,
+        messages=messages,
+    )
+
+    chunk = "\n".join(
+        block.text
+        for block in msg.content
+        if getattr(block, "type", None) == "text"
+        and hasattr(block, "text")
+    )
+
+    if chunk:
+        parts.append(chunk)
+
+    if msg.stop_reason == "end_turn":
+        break
+
+    if msg.stop_reason == "max_tokens":
+        full_text = "\n".join(parts)
+
+        messages = [
+            {"role": "user", "content": prompt},
+            {"role": "assistant", "content": full_text},
+            {
+                "role": "user",
+                "content": (
+                    "Continue exactly from where you stopped. "
+                    "Complete all remaining requested sections. "
+                    "Do not repeat sections already written. "
+                    "Finish the document properly."
+                ),
+            },
+        ]
+        continue
+
+    raise RuntimeError(
+        f"Draft generation stopped unexpectedly: {msg.stop_reason}"
+    )
+
+else:
+    raise RuntimeError(
+        "Draft generation was still incomplete after 3 generation attempts."
+    )
+
+text = "\n".join(parts)
 
 if not text.strip():
     raise RuntimeError("Anthropic returned no text content")
