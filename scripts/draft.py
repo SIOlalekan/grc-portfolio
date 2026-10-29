@@ -21,7 +21,14 @@ msg = client.messages.create(
       "\nUse public frameworks only. Original wording. "
       "Mark any placeholders clearly. Start with a note that this is an "
       "AI-assisted draft pending human review."}])
-(folder / "draft.md").write_text = "\n".join(
+(folder / "draft.md").write_text(
+    "\n".join(
+        block.text
+        for block in msg.content
+        if getattr(block, "type", None) == "text"
+        and hasattr(block, "text")
+    )
+)
     block.text
     for block in msg.content
     if getattr(block, "type", None) == "text" and hasattr(block, "text")
