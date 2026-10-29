@@ -1,0 +1,128 @@
+mapping:
+  name: UK GDPR to Cyber Essentials Control Mapping
+  version: "0.1.0"
+  status: draft
+  last_updated: "2026-10-29"
+
+  purpose: >
+    This mapping identifies practical relationships between
+    TrustReady UK GDPR controls and Cyber Essentials technical
+    controls. It is intended to support evidence reuse, compliance
+    assessment and future automation.
+
+  disclaimer: >
+    A mapped Cyber Essentials control may provide supporting
+    evidence for a UK GDPR requirement, but it does not by itself
+    prove UK GDPR compliance or certification equivalence.
+
+mappings:
+
+  # =========================================================
+  # UK GDPR SECURITY OF PERSONAL DATA
+  # =========================================================
+
+  - source_control: TR-UKGDPR-005
+    source_title: Security of Personal Data
+    relationship: supported_by
+    target_controls:
+      - TR-CE-001
+      - TR-CE-002
+      - TR-CE-003
+      - TR-CE-004
+      - TR-CE-005
+    rationale: >
+      Cyber Essentials technical controls can provide supporting
+      evidence that an organisation has implemented appropriate
+      technical security measures for protecting personal data.
+
+    evidence_examples:
+      - Firewall configuration
+      - Secure configuration records
+      - Patch management reports
+      - MFA configuration
+      - Malware protection status
+      - Vulnerability remediation records
+
+  # =========================================================
+  # UK GDPR GOVERNANCE AND ACCOUNTABILITY
+  # =========================================================
+
+  - source_control: TR-UKGDPR-001
+    source_title: Data Protection Governance
+    relationship: related_to
+    target_controls:
+      - TR-CE-002
+      - TR-CE-003
+      - TR-CE-004
+      - TR-CE-005
+    rationale: >
+      Evidence showing that technical security controls are
+      implemented, monitored and reviewed can support wider
+      organisational accountability for protecting personal data.
+
+    evidence_examples:
+      - Security review records
+      - Access review records
+      - Vulnerability management records
+      - Endpoint security records
+      - Security governance documentation
+
+  # =========================================================
+  # UK GDPR DPIA
+  # =========================================================
+
+  - source_control: TR-UKGDPR-004
+    source_title: Data Protection Impact Assessment
+    relationship: informed_by
+    target_controls:
+      - TR-CE-001
+      - TR-CE-002
+      - TR-CE-003
+      - TR-CE-004
+      - TR-CE-005
+    rationale: >
+      Where a DPIA identifies cybersecurity risks affecting
+      personal data, Cyber Essentials controls may form part
+      of the technical measures used to reduce those risks.
+
+    evidence_examples:
+      - DPIA risk treatment actions
+      - Firewall evidence
+      - Access control evidence
+      - Patch management evidence
+      - Malware protection evidence
+
+  # =========================================================
+  # UK GDPR LAWFUL PROCESSING
+  # =========================================================
+
+  - source_control: TR-UKGDPR-002
+    source_title: Lawful Basis for Processing
+    relationship: no_direct_mapping
+    target_controls: []
+    rationale: >
+      Cyber Essentials focuses on technical cybersecurity controls.
+      It does not establish or demonstrate a lawful basis for
+      processing personal data under UK GDPR.
+
+    evidence_examples:
+      - Record of Processing Activities
+      - Lawful basis assessment
+      - Legitimate Interests Assessment where applicable
+
+  # =========================================================
+  # UK GDPR TRANSPARENCY
+  # =========================================================
+
+  - source_control: TR-UKGDPR-003
+    source_title: Privacy Information
+    relationship: no_direct_mapping
+    target_controls: []
+    rationale: >
+      Cyber Essentials does not directly address transparency
+      obligations or privacy information provided to individuals.
+
+    evidence_examples:
+      - Privacy Notice
+      - Privacy information records
+      - Privacy Notice review history
