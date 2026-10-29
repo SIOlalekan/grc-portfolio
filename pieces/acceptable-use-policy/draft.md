@@ -1,5 +1,6 @@
-> **Note: AI-assisted draft pending human review.** This document was drafted with AI assistance and has not been reviewed by a person. Before adoption, the organisation should have it checked by someone responsible for IT, data protection, HR/volunteer management and, where appropriate, legal counsel. Items in **[SQUARE BRACKETS]** are placeholders to complete or delete.
-
+> **Note: > – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
+>
+> This document is a portfolio draft and has not been formally adopted by an organisation. Organisation-specific placeholders must be completed, and the document must be reviewed against applicable legal, regulatory, contractual and security requirements before operational use.
 ---
 
 # Acceptable Use Policy: Staff and Volunteers
