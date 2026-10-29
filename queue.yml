@@ -4,7 +4,7 @@ topics:
 - title: UK GDPR Data Protection Impact Assessment Template
   instruction: Write a practical DPIA template for a small UK organisation, aligned
     to UK GDPR and ICO guidance, with guidance notes in each section.
-  status: drafted
+  status: todo
 - title: Incident Response Policy
   instruction: Draft a practical Incident Response Policy for a small organisation.
     Include purpose and scope, definitions, document control, roles and responsibilities,
