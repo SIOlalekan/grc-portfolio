@@ -1,4 +1,6 @@
-> **Note: AI-assisted draft pending human review.** This policy was drafted with AI assistance and has not been reviewed by a person. Before adoption, a qualified person should check it against your organisation's context, legal obligations and risk appetite. Legal or data protection advice is recommended. Items shown as **[PLACEHOLDER: …]** must be completed or removed.
+> **DRAFT – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
+>
+> This document is a portfolio draft and has not been formally adopted by an organisation. Organisation-specific placeholders must be completed, and the document must be reviewed against applicable legal, regulatory, contractual and security requirements before operational use.
 
 ---
 
