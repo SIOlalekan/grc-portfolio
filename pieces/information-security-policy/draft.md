@@ -1,7 +1,7 @@
 # Information Security Policy
 
-> **⚠️ AI-assisted draft, pending human review.**
-> This document was drafted with AI assistance from public guidance and has not been reviewed by a qualified person. It is **not** legal advice. It does **not** claim certification, accreditation or compliance with ISO/IEC 27001, Cyber Essentials, UK GDPR or any other standard or law. Before adoption, [[PLACEHOLDER: reviewer name/role]] must review it, complete every `[[PLACEHOLDER]]`, and tailor it to the organisation's actual risks, systems and legal obligations.
+> > **DRAFT – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
+> This document is a portfolio draft and has not been formally adopted by an organisation. Organisation-specific placeholders must be completed, and the document must be reviewed against applicable legal, regulatory, contractual and security requirements before operational use..
 
 ---
 
