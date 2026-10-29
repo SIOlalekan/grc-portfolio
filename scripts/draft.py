@@ -30,8 +30,9 @@ text = "\n".join(
 
 if not text.strip():
     raise RuntimeError("Anthropic returned no text content")
-(folder / "draft.md").write_text(text)(folder / "review.md").write_text(
-    "# Review notes\nReviewed by:\nDate:\nChanges I made:\n")
-
+(folder / "draft.md").write_text(text)
+(folder / "review.md").write_text(
+    "# Review notes\nReviewed by:\nDate:\nChanges I made:\n"
+)
 item["status"] = "drafted"
 yaml.safe_dump(q, open("queue.yml", "w"), sort_keys=False)
