@@ -2,9 +2,8 @@ name: Weekly draft
 
 "on":
   schedule:
-    - cron: "0 8 * * 1'
+    - cron: '0 8 * * 1'
     workflow_dispatch:
-
 permissions:
   contents: write
   pull-requests: write
