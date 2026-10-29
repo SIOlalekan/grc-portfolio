@@ -1,0 +1,28 @@
+author: "[Sodeeq Ipadeola Olalekan]"
+role: "Head of Digital Trust, Policy and Compliance"
+topics:
+  - title: "UK GDPR Data Protection Impact Assessment Template"
+    instruction: >-
+      Write a practical DPIA template for a small UK organisation, aligned
+      to UK GDPR and ICO guidance, with guidance notes in each section.
+    status: todo
+  - title: "Incident Response Policy"
+    instruction: >-
+      Write an incident response policy for a small organisation with roles,
+      severity levels, reporting steps and a post-incident review section.
+    status: todo
+  - title: "Acceptable Use Policy"
+    instruction: >-
+      Write a clear acceptable use policy for staff and volunteers covering
+      devices, accounts, email and social media.
+    status: todo
+  - title: "AI Governance Policy"
+    instruction: >-
+      Write an AI governance policy for a small organisation, aligned to
+      NIST AI RMF, covering approved use, human review and data protection.
+    status: todo
+  - title: "Information Security Risk Register Template"
+    instruction: >-
+      Create a risk register template with scoring guidance and 10 example
+      risks for a small UK organisation.
+    status: todo
