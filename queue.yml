@@ -5,7 +5,7 @@ topics:
     instruction: >-
       Write a practical DPIA template for a small UK organisation, aligned
       to UK GDPR and ICO guidance, with guidance notes in each section.
-    status: todo
+    status: drafted
   - title: "Incident Response Policy"
     instruction: >-
       Write an incident response policy for a small organisation with roles,
