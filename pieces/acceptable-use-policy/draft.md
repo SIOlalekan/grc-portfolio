@@ -1,4 +1,4 @@
-> **Note: > – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
+> **DRAFT – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
 >
 > This document is a portfolio draft and has not been formally adopted by an organisation. Organisation-specific placeholders must be completed, and the document must be reviewed against applicable legal, regulatory, contractual and security requirements before operational use.
 ---
