@@ -7,10 +7,52 @@ topics:
       to UK GDPR and ICO guidance, with guidance notes in each section.
     status: drafted
   - title: "Incident Response Policy"
-    instruction: >-
-      Write an incident response policy for a small organisation with roles,
-      severity levels, reporting steps and a post-incident review section.
-    status: todo
+    instruction: >
+  Draft a practical Incident Response Policy for a small organisation.
+  The policy must be suitable for human review and customisation before approval.
+
+  Include:
+  - document control and approval information;
+  - purpose and scope;
+  - definitions;
+  - roles and responsibilities;
+  - incident reporting routes;
+  - external support and escalation contacts;
+  - incident severity levels and classification criteria;
+  - triage and initial assessment;
+  - containment procedures;
+  - investigation and evidence preservation;
+  - eradication;
+  - recovery and return to normal operations;
+  - personal data breach assessment and regulatory notification;
+  - internal and external communications;
+  - post-incident review and lessons learned;
+  - corrective actions and ownership;
+  - incident record keeping and retention;
+  - policy testing, exercises and periodic review.
+
+  Align the draft with publicly available guidance from recognised
+  frameworks such as NIST CSF 2.0, NIST SP 800-61 and the UK NCSC
+  where appropriate.
+
+  Do not claim that the organisation is certified or compliant with
+  any framework.
+
+  Do not invent organisation-specific information, names, contact
+  details, systems, regulatory registrations, response times or
+  contractual requirements. Mark these clearly as [[PLACEHOLDER]].
+
+  Where legal or regulatory requirements depend on jurisdiction,
+  identify them for human review rather than assuming they apply.
+
+  Suggested response targets must be clearly identified as suggested
+  values requiring organisational approval.
+
+  Clearly label the document:
+  "AI-assisted draft pending human review."
+
+  The final policy must require human review and approval before adoption.
+  status: todo
   - title: "Acceptable Use Policy"
     instruction: >-
       Write a clear acceptable use policy for staff and volunteers covering
