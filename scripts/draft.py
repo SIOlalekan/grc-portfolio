@@ -14,7 +14,7 @@ folder.mkdir(parents=True, exist_ok=True)
     f"# Brief\nAuthor: {q['author']} ({q['role']})\n"
     f"Date: {datetime.date.today()}\n\nInstruction:\n{item['instruction']}\n")
 
-client = anthropic.Anthropic()
+client = Anthropic()
 
 prompt = (
     item["instruction"]
