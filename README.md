@@ -1,73 +1,62 @@
-GRC & Digital Trust Portfolio
+# GRC & Digital Trust Portfolio
 
-Sodeeq Ipadeola Olalekan
-Digital Trust | Cybersecurity Governance | Risk | Compliance
+## Sodeeq Ipadeola Olalekan
+
+**Digital Trust | Cybersecurity Governance | Risk | Compliance**
 
 This repository contains practical Governance, Risk and Compliance (GRC) artefacts developed as part of my professional portfolio.
 
 The documents are designed primarily for small organisations, SMEs, charities and community organisations. They demonstrate practical approaches to information security governance, data protection, risk management, incident response and responsible AI governance.
 
-«Portfolio Notice: The documents in this repository are portfolio drafts. They are not presented as formally adopted organisational policies, legal advice, certification evidence or proof of regulatory compliance. Organisation-specific placeholders must be completed and each document should be reviewed and formally approved before operational use.»
+> **Portfolio Notice**
+>
+> The documents in this repository are portfolio drafts. They are not presented as formally adopted organisational policies, legal advice, certification evidence or proof of regulatory compliance. Organisation-specific placeholders must be completed, and each document should be reviewed and formally approved before operational use.
 
 ---
 
-Portfolio Artefacts
+## Portfolio Artefacts
 
-Artefact| Purpose| Status| Document
-Information Security Policy| Establishes the organisation's overall information security governance, responsibilities and security expectations.| Human reviewed – portfolio draft| "View Policy" (pieces/information-security-policy/draft.md)
-Incident Response Policy| Provides a structured approach for preparing for, identifying, containing, investigating, recovering from and reviewing security incidents.| Human reviewed – portfolio draft| "View Policy" (pieces/incident-response-policy/draft.md)
-Acceptable Use Policy| Defines acceptable use of organisational devices, accounts, email, internet services and social media by staff and volunteers.| Human reviewed – portfolio draft| "View Policy" (pieces/acceptable-use-policy/draft.md)
-AI Governance Policy| Establishes governance principles for responsible AI use, including oversight, risk management, data protection and accountability.| Human reviewed – portfolio draft| "View Policy" (pieces/ai-governance-policy/draft.md)
-Information Security Risk Register Template| Provides a structured 5×5 risk assessment methodology, treatment approach and example information-security risks.| Human reviewed – portfolio template| "View Risk Register" (pieces/information-security-risk-register-template/draft.md)
-UK GDPR Data Protection Impact Assessment Template| Provides a structured DPIA process for assessing privacy risks associated with new or changed processing activities.| Human reviewed – portfolio template| "View DPIA" (pieces/uk-gdpr-data-protection-impact-assessment-template/draft.md)
-
----
-
-Human Review Records
-
-Each portfolio artefact includes a separate review record showing the quality and governance checks performed before the document was accepted into the main portfolio.
-
-- "Information Security Policy Review" (pieces/information-security-policy/review.md)
-- "Incident Response Policy Review" (pieces/incident-response-policy/review.md)
-- "Acceptable Use Policy Review" (pieces/acceptable-use-policy/review.md)
-- "AI Governance Policy Review" (pieces/ai-governance-policy/review.md)
-- "Information Security Risk Register Review" (pieces/information-security-risk-register-template/review.md)
-- "UK GDPR DPIA Review" (pieces/uk-gdpr-data-protection-impact-assessment-template/review.md)
+| Artefact | Purpose | Status | Document |
+|---|---|---|---|
+| **Information Security Policy** | Overall information security governance, responsibilities and security expectations. | Human reviewed – portfolio draft | [View Policy](pieces/information-security-policy/draft.md) |
+| **Incident Response Policy** | Preparation, detection, containment, investigation, recovery and post-incident review. | Human reviewed – portfolio draft | [View Policy](pieces/incident-response-policy/draft.md) |
+| **Acceptable Use Policy** | Acceptable use of devices, accounts, email, internet services and social media. | Human reviewed – portfolio draft | [View Policy](pieces/acceptable-use-policy/draft.md) |
+| **AI Governance Policy** | Responsible AI use, oversight, risk management, data protection and accountability. | Human reviewed – portfolio draft | [View Policy](pieces/ai-governance-policy/draft.md) |
+| **Information Security Risk Register Template** | 5×5 risk assessment methodology, treatment approach and example risks. | Human reviewed – portfolio template | [View Risk Register](pieces/information-security-risk-register-template/draft.md) |
+| **UK GDPR DPIA Template** | Structured assessment of privacy risks associated with new or changed processing activities. | Human reviewed – portfolio template | [View DPIA](pieces/uk-gdpr-data-protection-impact-assessment-template/draft.md) |
 
 ---
 
-Governance Workflow
+## Human Review Records
 
-The portfolio uses a controlled document-development workflow:
+Each artefact includes a separate human review record documenting the checks completed before acceptance into the main portfolio.
 
-1. Define requirement
-A GRC artefact is added to the document queue with its scope and requirements.
-
-2. Draft
-A structured first draft is generated using defined governance instructions and recognised public guidance.
-
-3. Completeness controls
-The workflow checks that generation completes successfully rather than accepting a truncated document.
-
-4. Human review
-The document is reviewed for completeness, governance quality, placeholders, regulatory claims and organisation-specific assumptions.
-
-5. Review record
-Review activity, outstanding actions and the review outcome are documented separately.
-
-6. Pull request
-The draft and review evidence are presented through a GitHub pull request.
-
-7. Merge to main
-Only reviewed artefacts are merged into the main portfolio.
-
-This approach provides a visible audit trail between initial drafting, human review and final portfolio acceptance.
+- [Information Security Policy Review](pieces/information-security-policy/review.md)
+- [Incident Response Policy Review](pieces/incident-response-policy/review.md)
+- [Acceptable Use Policy Review](pieces/acceptable-use-policy/review.md)
+- [AI Governance Policy Review](pieces/ai-governance-policy/review.md)
+- [Information Security Risk Register Review](pieces/information-security-risk-register-template/review.md)
+- [UK GDPR DPIA Review](pieces/uk-gdpr-data-protection-impact-assessment-template/review.md)
 
 ---
 
-Areas Demonstrated
+## Governance Workflow
 
-The portfolio demonstrates practical capability across:
+The portfolio follows a controlled document-development process:
+
+1. **Define requirement** – identify the required GRC artefact and its scope.
+2. **Draft** – produce a structured first draft using defined governance requirements and public guidance.
+3. **Completeness check** – confirm the document has not been truncated or left incomplete.
+4. **Human review** – review content, governance controls, placeholders and regulatory claims.
+5. **Review record** – document checks performed, outstanding actions and review outcome.
+6. **Pull request** – present the draft and review evidence for controlled acceptance.
+7. **Merge to main** – only reviewed artefacts are retained in the main portfolio.
+
+This creates a visible audit trail between drafting, review and portfolio acceptance.
+
+---
+
+## Areas Demonstrated
 
 - Information Security Governance
 - Governance, Risk and Compliance (GRC)
@@ -78,19 +67,17 @@ The portfolio demonstrates practical capability across:
 - Data Protection Impact Assessments
 - Incident Response Governance
 - Responsible AI and AI Governance
-- Third-Party and Supplier Risk
-- Security Awareness and Human Risk
 - Policy Development and Review
 - Control Design and Assurance
 
 ---
 
-Reference Frameworks and Guidance
+## Reference Frameworks and Guidance
 
-Depending on the artefact, the portfolio draws on publicly available concepts and guidance including:
+Portfolio artefacts draw on relevant publicly available concepts and guidance including:
 
 - UK National Cyber Security Centre (NCSC)
-- UK Information Commissioner's Office (ICO)
+- Information Commissioner's Office (ICO)
 - UK GDPR
 - Data Protection Act 2018
 - NIST Cybersecurity Framework
@@ -100,13 +87,13 @@ Depending on the artefact, the portfolio draws on publicly available concepts an
 - CIS Controls
 - Cyber Essentials principles
 
-References to these frameworks do not constitute certification, accreditation or a claim of conformity.
+References to these frameworks do **not** constitute certification, accreditation or a claim of conformity.
 
 ---
 
-Portfolio Development
+## Portfolio Development
 
-This repository is an evolving portfolio. Additional artefacts will be added across areas such as:
+Additional artefacts will be developed across areas including:
 
 - Access Control
 - Data Protection
@@ -121,8 +108,8 @@ This repository is an evolving portfolio. Additional artefacts will be added acr
 
 ---
 
-Author
+## Author
 
-Sodeeq Ipadeola Olalekan
+**Sodeeq Ipadeola Olalekan**
 
-Focused on Digital Trust, Cybersecurity Governance, Governance Risk & Compliance, Responsible AI, Policy and Assurance.
+Digital Trust | Cybersecurity Governance | GRC | Responsible AI | Policy & Assurance
