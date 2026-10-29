@@ -1,7 +1,8 @@
 # Incident Response Policy
 
-> **AI-ASSISTED DRAFT – PENDING HUMAN REVIEW**
-> This document was drafted with AI assistance using publicly available guidance. It is **not** approved and **must not be adopted** until reviewed, amended and formally approved by authorised people in the organisation. It makes no claim of certification or compliance with any standard, law or scheme. Legal and regulatory points marked **⚑ LEGAL REVIEW** depend on jurisdiction and sector and must be checked by a qualified person. Items marked **[[PLACEHOLDER]]** are unknown and must be completed. All response targets are **suggestions only** and need organisational approval.
+> > **DRAFT – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
+>
+> This document is a portfolio draft and has not been formally adopted by an organisation. Organisation-specific placeholders must be completed, and the document must be reviewed against applicable legal, regulatory, contractual and security requirements before operational use.
 
 ---
 
