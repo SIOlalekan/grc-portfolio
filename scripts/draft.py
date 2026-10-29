@@ -18,9 +18,17 @@ client = Anthropic()
 msg = client.messages.create(
     model="claude-sonnet-5-5", max_tokens=8000,
     messages=[{"role": "user", "content": item["instruction"] +
-      "\nUse public frameworks only. Original wording. "
-      "Mark any placeholders clearly. Start with a note that this is an "
-      "AI-assisted draft pending human review."}])
+    "\nUse public frameworks only. Use original wording. "
+    "Mark any placeholders clearly. Start with a note that this is an "
+    "AI-assisted draft pending human review. "
+    "Produce a COMPLETE but concise document. "
+    "The entire response must fit comfortably within 6,500 output tokens. "
+    "Prioritise complete coverage of every requested section over lengthy explanation. "
+    "Use concise tables, bullet points and short paragraphs where appropriate. "
+    "Do not repeat information unnecessarily. "
+    "Do not stop halfway through a section. "
+    "Make sure the document has a proper ending and all requested sections are completed."
+}])
 if msg.stop_reason == "max_tokens":
     raise RuntimeError(
         "Draft generation was truncated because the model reached the maximum output token limit."
