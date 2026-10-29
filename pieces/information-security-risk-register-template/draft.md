@@ -1,6 +1,8 @@
 # Risk Register Template for a Small UK Organisation
 
-> **Note: AI-assisted draft pending human review.** This document was drafted with AI assistance and has not been checked by a qualified person. Before use, a responsible person should review it for accuracy, legal and regulatory fit, and suitability for your organisation. Items in **[PLACEHOLDER: …]** need your input. The example risks are illustrative, and their scores are not assessments of any real organisation.
+> **DRAFT – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
+>
+> This document is a portfolio draft and has not been formally adopted by an organisation. Organisation-specific placeholders must be completed, and the document must be reviewed against applicable legal, regulatory, contractual and security requirements before operational use.
 
 ---
 
