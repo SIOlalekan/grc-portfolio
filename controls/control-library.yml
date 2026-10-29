@@ -1,0 +1,238 @@
+library:
+  name: TrustReady GRC Control Library
+  version: "0.1.0"
+  status: draft
+  last_updated: "2026-10-29"
+  purpose: >
+    A machine-readable Governance, Risk and Compliance control library
+    designed to support compliance assessments, evidence collection,
+    risk management and future compliance automation.
+
+frameworks:
+  - name: UK GDPR
+    authority: Information Commissioner's Office
+    short_name: UKGDPR
+
+  - name: Cyber Essentials
+    authority: National Cyber Security Centre
+    short_name: CE
+
+assessment_status:
+  - compliant
+  - partially_compliant
+  - non_compliant
+  - not_applicable
+
+controls:
+
+  # =========================================================
+  # UK GDPR CONTROLS
+  # =========================================================
+
+  - control_id: TR-UKGDPR-001
+    framework: UK GDPR
+    domain: Governance and Accountability
+    title: Data Protection Governance
+    requirement: >
+      The organisation should establish clear responsibility,
+      oversight and accountability for the processing of personal data.
+    evidence_required:
+      - Data Protection Policy
+      - Assigned privacy responsibilities
+      - Governance review records
+      - Staff awareness or training records
+    severity: high
+    assessment_question: >
+      Can the organisation demonstrate clear ownership and
+      accountability for its data protection obligations?
+    source_reference:
+      - UK GDPR Article 5(2)
+      - UK GDPR Article 24
+    automation_potential: manual
+
+  - control_id: TR-UKGDPR-002
+    framework: UK GDPR
+    domain: Lawful Processing
+    title: Lawful Basis for Processing
+    requirement: >
+      A valid lawful basis should be identified and documented
+      for each purpose involving the processing of personal data.
+    evidence_required:
+      - Record of Processing Activities
+      - Lawful basis assessment
+      - Legitimate Interests Assessment where applicable
+    severity: critical
+    assessment_question: >
+      Is a valid lawful basis identified and documented for
+      each personal data processing purpose?
+    source_reference:
+      - UK GDPR Article 6
+    automation_potential: hybrid
+
+  - control_id: TR-UKGDPR-003
+    framework: UK GDPR
+    domain: Transparency
+    title: Privacy Information
+    requirement: >
+      Individuals should receive clear, accessible and accurate
+      information explaining how their personal data is processed.
+    evidence_required:
+      - Privacy Notice
+      - Privacy Notice review history
+      - Evidence of privacy information being provided
+    severity: high
+    assessment_question: >
+      Does the organisation provide accurate and up-to-date
+      privacy information to individuals?
+    source_reference:
+      - UK GDPR Articles 12 to 14
+    automation_potential: hybrid
+
+  - control_id: TR-UKGDPR-004
+    framework: UK GDPR
+    domain: Data Protection Risk
+    title: Data Protection Impact Assessment
+    requirement: >
+      Processing activities likely to result in high risk to
+      individuals should be assessed through an appropriate DPIA
+      before the processing begins.
+    evidence_required:
+      - DPIA screening record
+      - Completed DPIA
+      - Risk mitigation plan
+      - DPIA approval record
+    severity: critical
+    assessment_question: >
+      Are high-risk processing activities identified and supported
+      by an appropriate Data Protection Impact Assessment?
+    source_reference:
+      - UK GDPR Article 35
+    automation_potential: hybrid
+
+  - control_id: TR-UKGDPR-005
+    framework: UK GDPR
+    domain: Security
+    title: Security of Personal Data
+    requirement: >
+      Appropriate technical and organisational measures should be
+      implemented to protect personal data against unauthorised
+      access, loss, alteration or disclosure.
+    evidence_required:
+      - Information Security Policy
+      - Access control records
+      - MFA configuration evidence
+      - Vulnerability management records
+      - Backup and recovery evidence
+    severity: critical
+    assessment_question: >
+      Are appropriate technical and organisational security
+      measures implemented to protect personal data?
+    source_reference:
+      - UK GDPR Article 32
+    automation_potential: high
+
+  # =========================================================
+  # CYBER ESSENTIALS CONTROLS
+  # =========================================================
+
+  - control_id: TR-CE-001
+    framework: Cyber Essentials
+    domain: Firewalls
+    title: Firewall Protection
+    requirement: >
+      Internet-connected systems should be protected by properly
+      configured firewalls or equivalent network security controls.
+    evidence_required:
+      - Firewall configuration
+      - Network security configuration
+      - Firewall rule review
+    severity: critical
+    assessment_question: >
+      Are internet-connected systems protected by properly
+      configured firewalls?
+    source_reference:
+      - Cyber Essentials - Firewalls
+    automation_potential: high
+
+  - control_id: TR-CE-002
+    framework: Cyber Essentials
+    domain: Secure Configuration
+    title: Secure System Configuration
+    requirement: >
+      Systems and devices should be securely configured and
+      unnecessary accounts, software and services should be
+      removed or disabled.
+    evidence_required:
+      - Secure configuration baseline
+      - Software inventory
+      - Account review
+      - Device configuration records
+    severity: high
+    assessment_question: >
+      Are systems securely configured and unnecessary services,
+      software and accounts removed or disabled?
+    source_reference:
+      - Cyber Essentials - Secure Configuration
+    automation_potential: high
+
+  - control_id: TR-CE-003
+    framework: Cyber Essentials
+    domain: Security Update Management
+    title: Security Updates and Vulnerability Management
+    requirement: >
+      Supported software should receive security updates promptly
+      and known high-risk vulnerabilities should be remediated
+      within appropriate timescales.
+    evidence_required:
+      - Patch management reports
+      - Vulnerability scan results
+      - Remediation tickets
+      - Software support inventory
+    severity: critical
+    assessment_question: >
+      Are security updates and high-risk vulnerabilities managed
+      within defined timescales?
+    source_reference:
+      - Cyber Essentials - Security Update Management
+    automation_potential: high
+
+  - control_id: TR-CE-004
+    framework: Cyber Essentials
+    domain: User Access Control
+    title: User Access and Multi-Factor Authentication
+    requirement: >
+      Access should be limited to authorised users using unique
+      accounts, appropriate privileges and multi-factor
+      authentication where required.
+    evidence_required:
+      - User account inventory
+      - Access approval records
+      - Privileged account records
+      - MFA configuration evidence
+    severity: critical
+    assessment_question: >
+      Are user access, privileged access and MFA appropriately
+      controlled?
+    source_reference:
+      - Cyber Essentials - User Access Control
+    automation_potential: high
+
+  - control_id: TR-CE-005
+    framework: Cyber Essentials
+    domain: Malware Protection
+    title: Malware Protection
+    requirement: >
+      Devices should use appropriate controls to prevent malicious
+      software from executing or causing harm.
+    evidence_required:
+      - Endpoint protection configuration
+      - Malware protection status
+      - Application control settings
+      - Security monitoring records
+    severity: critical
+    assessment_question: >
+      Are appropriate malware protection controls active on
+      in-scope devices?
+    source_reference:
+      - Cyber Essentials - Malware Protection
+    automation_potential: high
