@@ -22,7 +22,7 @@ topics:
 - title: Acceptable Use Policy
   instruction: Write a clear acceptable use policy for staff and volunteers covering
     devices, accounts, email and social media.
-  status: todo
+  status: drafted
 - title: AI Governance Policy
   instruction: Write an AI governance policy for a small organisation, aligned to
     NIST AI RMF, covering approved use, human review and data protection.
