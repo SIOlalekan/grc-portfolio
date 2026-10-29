@@ -26,7 +26,7 @@ topics:
 - title: AI Governance Policy
   instruction: Write an AI governance policy for a small organisation, aligned to
     NIST AI RMF, covering approved use, human review and data protection.
-  status: todo
+  status: drafted
 - title: Information Security Risk Register Template
   instruction: Create a risk register template with scoring guidance and 10 example
     risks for a small UK organisation.
