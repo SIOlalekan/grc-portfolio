@@ -95,7 +95,7 @@ topics:
     NCSC, Cyber Essentials and CIS Controls guidance where appropriate. Suggested
     remediation targets must require organisational approval. Mark unknown information
     as [[PLACEHOLDER]]. Do not claim certification or compliance.
-  status: todo
+  status: drafted
 - title: Change Management Policy
   instruction: Draft a practical Change Management Policy for a small UK organisation.
     Cover change requests, risk assessment, approvals, testing, segregation of duties,
