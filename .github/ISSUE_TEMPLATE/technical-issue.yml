@@ -1,0 +1,58 @@
+name: Technical Issue
+description: Report a problem with the TrustReady assessment engine, validation workflow or repository functionality.
+title: "[TECHNICAL ISSUE] "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Assessment engine
+        - Control library
+        - Framework mappings
+        - GitHub Actions validation
+        - GRC artefacts
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe what happened.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: Explain what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide the steps needed to reproduce the issue.
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Fix
+      description: Add any suggested solution or improvement.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked that this issue has not already been reported.
+          required: true
+        - label: I have not included confidential information or personal data.
+          required: true
