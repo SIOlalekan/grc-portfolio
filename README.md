@@ -7,7 +7,7 @@
 **Sodeeq Ipadeola Olalekan**  
 Digital Trust | Cybersecurity Governance | Risk | Compliance
 
-TrustReady GRC is a practical Governance, Risk and Compliance portfolio designed to demonstrate how regulatory requirements, cybersecurity controls, evidence, risk and compliance assessments can be translated into structured and increasingly automated processes.
+TrustReady GRC is a practical Governance, Risk and Compliance project designed to help UK SMEs, Charities and Community Interest Companies (CICs) translate regulatory requirements, cybersecurity controls, evidence, risk and compliance assessments into structured and increasingly automated processes.
 
 The project goes beyond static policy documentation by combining governance artefacts with machine-readable controls, cross-framework mapping, assessment logic and automated repository validation.
 
@@ -15,7 +15,7 @@ The project goes beyond static policy documentation by combining governance arte
 
 ## Project Objectives
 
-TrustReady GRC is designed to explore how organisations, particularly SMEs and mission-led organisations, can:
+TrustReady GRC is designed to explore how UK SMEs, Charities and Community Interest Companies (CICs) can:
 
 - understand their compliance obligations;
 - assess their current control environment;
