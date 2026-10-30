@@ -1,0 +1,64 @@
+name: Control or Mapping Review
+description: Report an issue or suggest an improvement to a TrustReady GRC control or framework mapping.
+title: "[CONTROL REVIEW] "
+labels:
+  - review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reviewing TrustReady GRC.
+        Please provide specific, evidence-based feedback where possible.
+
+  - type: input
+    id: control
+    attributes:
+      label: Control ID or Mapping
+      description: Enter the relevant control ID or mapping.
+      placeholder: TR-CE-004
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Review Type
+      options:
+        - Control requirement
+        - Evidence requirement
+        - Framework mapping
+        - Assessment question
+        - Severity classification
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue Identified
+      description: Explain what you believe should be corrected or improved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Suggested Improvement
+      description: Explain the change you recommend.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Supporting Reference
+      description: Add relevant regulation, framework, guidance or professional reference where available.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included confidential information or personal data.
+          required: true
