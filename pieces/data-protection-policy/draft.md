@@ -22,8 +22,8 @@
 
 - **Purpose:** This policy sets out how [[PLACEHOLDER: organisation]] intends to handle personal data lawfully, fairly and securely.
 - **Scope:** It applies to all staff, trustees/directors, volunteers, contractors and others handling personal data on the organisation's behalf. It covers personal data in any format (digital, paper, audio, images) about [[PLACEHOLDER: e.g. clients, employees, supporters, website users, suppliers]].
-- **Legal framework (to be verified at review):** UK GDPR, the Data Protection Act 2018 (DPA 2018), and the Privacy and Electronic Communications Regulations 2003 (PECR) for electronic marketing and cookies.
-- **Changing law:** The Data (Use and Access) Act 2025 amends UK data protection law, with provisions commencing in stages. The reviewer must check current ICO guidance and commencement status before approval and at each review. [[PLACEHOLDER: record date of legal check]]
+- **Legal framework:** UK GDPR, Data Protection Act 2018, Privacy and Electronic Communications Regulations 2003, and the Data (Use and Access) Act 2025, as applicable and as amended.
+- **Current legal position:** The Data (Use and Access) Act 2025 amends aspects of the UK GDPR, Data Protection Act 2018 and related privacy legislation. Its data-protection provisions are now in force. This policy should be reviewed against current ICO guidance and applicable legislation whenever it is adopted or periodically reviewed.
 - **Related documents:** [[PLACEHOLDER: privacy notices, retention schedule, information security policy, breach procedure, DSAR procedure, ROPA, DPIA template, acceptable use policy]]
 
 ## 2. Roles and responsibilities
