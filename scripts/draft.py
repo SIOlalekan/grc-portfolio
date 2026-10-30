@@ -4,7 +4,8 @@ from anthropic import Anthropic
 q = yaml.safe_load(open("queue.yml"))
 item = next((i for i in q["topics"] if i["status"] == "todo"), None)
 if not item:
-    raise SystemExit("Queue is empty")
+    print("No pending GRC artefacts. Queue is complete.")
+    raise SystemExit(0)
 
 slug = re.sub(r"[^a-z0-9]+", "-", item["title"].lower()).strip("-")
 folder = pathlib.Path("pieces") / slug
