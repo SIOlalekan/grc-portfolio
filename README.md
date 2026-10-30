@@ -18,25 +18,30 @@ The documents are designed primarily for small organisations, SMEs, charities an
 
 | Artefact | Purpose | Status | Document |
 |---|---|---|---|
-| **Information Security Policy** | Overall information security governance, responsibilities and security expectations. | Human reviewed – portfolio draft | [View Policy](pieces/information-security-policy/draft.md) |
-| **Incident Response Policy** | Preparation, detection, containment, investigation, recovery and post-incident review. | Human reviewed – portfolio draft | [View Policy](pieces/incident-response-policy/draft.md) |
-| **Acceptable Use Policy** | Acceptable use of devices, accounts, email, internet services and social media. | Human reviewed – portfolio draft | [View Policy](pieces/acceptable-use-policy/draft.md) |
-| **AI Governance Policy** | Responsible AI use, oversight, risk management, data protection and accountability. | Human reviewed – portfolio draft | [View Policy](pieces/ai-governance-policy/draft.md) |
-| **Information Security Risk Register Template** | 5×5 risk assessment methodology, treatment approach and example risks. | Human reviewed – portfolio template | [View Risk Register](pieces/information-security-risk-register-template/draft.md) |
-| **UK GDPR DPIA Template** | Structured assessment of privacy risks associated with new or changed processing activities. | Human reviewed – portfolio template | [View DPIA](pieces/uk-gdpr-data-protection-impact-assessment-template/draft.md) |
+| Information Security Policy | Overall information security governance, responsibilities and security expectations. | Human reviewed – portfolio draft | [View Policy](pieces/information-security-policy/draft.md) |
+| Incident Response Policy | Preparation, detection, containment, investigation, recovery and post-incident review. | Human reviewed – portfolio draft | [View Policy](pieces/incident-response-policy/draft.md) |
+| Acceptable Use Policy | Acceptable use of devices, accounts, email, internet services and social media. | Human reviewed – portfolio draft | [View Policy](pieces/acceptable-use-policy/draft.md) |
+| AI Governance Policy | Responsible AI use, human oversight, risk management, data protection and accountability. | Human reviewed – portfolio draft | [View Policy](pieces/ai-governance-policy/draft.md) |
+| Access Control Policy | User access, least privilege, privileged accounts, MFA, access reviews and joiner-mover-leaver controls. | Human reviewed – portfolio draft | [View Policy](pieces/access-control-policy/draft.md) |
+| Data Protection Policy | UK GDPR governance, lawful processing, individual rights, security, retention and data breaches. | Human reviewed – portfolio draft | [View Policy](pieces/data-protection-policy/draft.md) |
+| Supplier Security Policy | Security governance, due diligence and ongoing oversight of suppliers and third parties. | Human reviewed – portfolio draft | [View Policy](pieces/supplier-security-policy/draft.md) |
+| Business Continuity and Disaster Recovery Policy | Business impact, critical services, recovery priorities, resilience, testing and restoration. | Human reviewed – portfolio draft | [View Policy](pieces/business-continuity-and-disaster-recovery-policy/draft.md) |
+| Data Retention and Secure Disposal Policy | Retention, deletion, destruction, legal holds, secure disposal and records governance. | Human reviewed – portfolio draft | [View Policy](pieces/data-retention-and-secure-disposal-policy/draft.md) |
+| Vulnerability Management Policy | Vulnerability identification, prioritisation, remediation, patching, exceptions and reporting. | Human reviewed – portfolio draft | [View Policy](pieces/vulnerability-management-policy/draft.md) |
+| Change Management Policy | Controlled change requests, risk assessment, testing, approvals, rollback and post-implementation review. | Human reviewed – portfolio draft | [View Policy](pieces/change-management-policy/draft.md) |
+| Security Awareness and Training Policy | Security induction, refresher training, phishing awareness, incident reporting and training governance. | Human reviewed – portfolio draft | [View Policy](pieces/security-awareness-and-training-policy/draft.md) |
+| Information Security Risk Register Template | Structured information security risk assessment, scoring, ownership and treatment tracking. | Human reviewed – portfolio template | [View Risk Register](pieces/information-security-risk-register-template/draft.md) |
+| UK GDPR Data Protection Impact Assessment Template | Structured assessment of privacy risks associated with new or changed personal-data processing. | Human reviewed – portfolio template | [View DPIA](pieces/uk-gdpr-data-protection-impact-assessment-template/draft.md) |
+| Third-Party Risk Assessment Template | Evidence-based supplier security, privacy, resilience, contractual and residual-risk assessment. | Human reviewed – portfolio template | [View Assessment](pieces/third-party-risk-assessment-template/draft.md) |
+| Compliance Monitoring and Review Checklist | Periodic monitoring of governance, risk, security, privacy, evidence, findings and corrective actions. | Human reviewed – portfolio checklist | [View Checklist](pieces/compliance-monitoring-and-review-checklist/draft.md) |
 
 ---
 
-## Human Review Records
+### Human Review Records
 
-Each artefact includes a separate human review record documenting the checks completed before acceptance into the main portfolio.
+Each artefact includes a separate `review.md` file documenting the human quality review performed before the artefact was accepted into the main portfolio.
 
-- [Information Security Policy Review](pieces/information-security-policy/review.md)
-- [Incident Response Policy Review](pieces/incident-response-policy/review.md)
-- [Acceptable Use Policy Review](pieces/acceptable-use-policy/review.md)
-- [AI Governance Policy Review](pieces/ai-governance-policy/review.md)
-- [Information Security Risk Register Review](pieces/information-security-risk-register-template/review.md)
-- [UK GDPR DPIA Review](pieces/uk-gdpr-data-protection-impact-assessment-template/review.md)
+These artefacts are portfolio drafts and templates. They do not represent certification, legal advice or proof of organisational compliance. Organisation-specific placeholders must be completed and appropriate approval obtained before operational use.
 
 ---
 
