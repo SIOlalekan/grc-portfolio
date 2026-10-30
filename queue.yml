@@ -112,7 +112,7 @@ topics:
     measurement and review. Use UK NCSC and relevant public guidance. Do not claim
     certification or compliance. Mark organisation-specific information as [[PLACEHOLDER]].
     Require human review and organisational approval.
-  status: todo
+  status: drafted
 - title: Third-Party Risk Assessment Template
   instruction: Create a practical Third-Party Risk Assessment Template for a small
     UK organisation. Include supplier profile, service criticality, information accessed,
