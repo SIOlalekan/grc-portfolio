@@ -2,6 +2,8 @@
 
 ## TrustReady GRC
 
+[![TrustReady GRC Validation](https://github.com/SIOlalekan/grc-portfolio/actions/workflows/grc-validation.yml/badge.svg)](https://github.com/SIOlalekan/grc-portfolio/actions/workflows/grc-validation.yml)
+
 **Sodeeq Ipadeola Olalekan**  
 Digital Trust | Cybersecurity Governance | Risk | Compliance
 
