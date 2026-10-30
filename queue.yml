@@ -1,175 +1,133 @@
-author: "[Sodeeq Ipadeola Olalekan]"
+author: '[Sodeeq Ipadeola Olalekan]'
 role: Head of Digital Trust, Policy and Compliance
-
 topics:
-  - title: UK GDPR Data Protection Impact Assessment Template
-    instruction: >-
-      Write a practical DPIA template for a small UK organisation, aligned
-      to UK GDPR and ICO guidance, with guidance notes in each section.
-    status: drafted
-
-  - title: Incident Response Policy
-    instruction: >-
-      Draft a practical Incident Response Policy for a small organisation.
-      Include purpose and scope, definitions, document control, roles and responsibilities,
-      reporting and escalation, external support contacts, severity classification,
-      triage, containment, investigation, evidence preservation, eradication, recovery,
-      personal data breach assessment, regulatory notification, communications, post-incident
-      review, lessons learned, corrective actions, record retention, testing and policy
-      review. Use publicly available guidance from NIST CSF 2.0, NIST SP 800-61 and
-      UK NCSC where appropriate. Do not claim certification or compliance. Do not invent
-      organisation-specific information. Mark unknown information as [[PLACEHOLDER]].
-      Flag jurisdiction-dependent legal requirements for human review. Suggested response
-      targets must require organisational approval. Clearly state that this is an AI-assisted
-      draft pending human review and that human approval is required before adoption.
-    status: drafted
-
-  - title: Acceptable Use Policy
-    instruction: >-
-      Write a clear acceptable use policy for staff and volunteers covering
-      devices, accounts, email and social media.
-    status: drafted
-
-  - title: AI Governance Policy
-    instruction: >-
-      Write an AI governance policy for a small organisation, aligned to
-      NIST AI RMF, covering approved use, human review and data protection.
-    status: drafted
-
-  - title: Information Security Risk Register Template
-    instruction: >-
-      Create a risk register template with scoring guidance and 10 example
-      risks for a small UK organisation.
-    status: drafted
-
-  - title: Information Security Policy
-    instruction: >-
-      Draft a practical Information Security Policy for a small UK organisation.
-      Cover governance, information security responsibilities, access control, asset
-      management, data protection, incident management, supplier security, business
-      continuity, training, monitoring and policy review. Use public guidance from UK
-      NCSC, ISO/IEC 27001 concepts and CIS Controls where appropriate. Do not claim
-      certification or compliance. Mark unknown organisation-specific information as
-      [[PLACEHOLDER]]. Clearly state that this is an AI-assisted draft pending human review.
-    status: drafted
-
-  - title: Access Control Policy
-    instruction: >-
-      Draft a practical Access Control Policy for a small UK organisation.
-      Cover user access, least privilege, joiners movers and leavers, privileged
-      accounts, authentication, MFA, password management, access reviews,
-      remote access, third-party access, shared accounts, logging, exceptions
-      and periodic review. Use public guidance from UK NCSC, Cyber Essentials,
-      ISO/IEC 27001 concepts and CIS Controls where appropriate. Do not claim
-      certification or compliance. Mark unknown organisation-specific
-      information as [[PLACEHOLDER]]. Require human review and organisational
-      approval before operational use.
-    status: todo
-
-  - title: Data Protection Policy
-    instruction: >-
-      Draft a practical Data Protection Policy for a small UK organisation.
-      Cover UK GDPR principles, accountability, lawful basis, transparency,
-      individual rights, special category data, data minimisation, accuracy,
-      retention, security, processors, international transfers, personal data
-      breaches, DPIAs, training and policy review. Use ICO and UK data
-      protection guidance where appropriate. Do not claim compliance. Mark
-      organisation-specific information as [[PLACEHOLDER]]. Require human
-      review and organisational approval before operational use.
-    status: todo
-
-  - title: Supplier Security Policy
-    instruction: >-
-      Draft a practical Supplier Security Policy for a small UK organisation.
-      Cover supplier due diligence, information security requirements,
-      contracts, data processing, access control, sub-processors, incident
-      notification, vulnerability management, service continuity, monitoring,
-      reassessment, termination and offboarding. Use public guidance from UK
-      NCSC, ISO/IEC 27001 concepts and relevant data protection guidance.
-      Do not claim certification or compliance. Mark unknown information as
-      [[PLACEHOLDER]]. Require human review and organisational approval.
-    status: todo
-
-  - title: Business Continuity and Disaster Recovery Policy
-    instruction: >-
-      Draft a practical Business Continuity and Disaster Recovery Policy for
-      a small UK organisation. Cover critical services, business impact,
-      recovery priorities, backups, recovery objectives, roles, emergency
-      communications, alternative working arrangements, cyber incidents,
-      supplier dependencies, testing, exercises, lessons learned and review.
-      Do not invent organisation-specific recovery targets. Mark them as
-      [[PLACEHOLDER]]. Use relevant UK NCSC and recognised continuity guidance.
-      Require human review and organisational approval before operational use.
-    status: todo
-
-  - title: Data Retention and Secure Disposal Policy
-    instruction: >-
-      Draft a practical Data Retention and Secure Disposal Policy for a small
-      UK organisation. Cover personal data, business records, security logs,
-      contracts, HR records, financial information, backups, legal holds,
-      retention schedules, deletion, destruction, disposal of devices and
-      media, responsibilities, exceptions and review. Use ICO and UK data
-      protection guidance where appropriate. Do not invent legal retention
-      periods. Mark uncertain or organisation-specific periods as
-      [[PLACEHOLDER]]. Require human review and organisational approval.
-    status: todo
-
-  - title: Vulnerability Management Policy
-    instruction: >-
-      Draft a practical Vulnerability Management Policy for a small UK
-      organisation. Cover asset identification, vulnerability scanning,
-      security updates, patching, severity assessment, prioritisation,
-      remediation, exceptions, unsupported software, third-party systems,
-      verification, metrics, reporting and review. Use public UK NCSC,
-      Cyber Essentials and CIS Controls guidance where appropriate. Suggested
-      remediation targets must require organisational approval. Mark unknown
-      information as [[PLACEHOLDER]]. Do not claim certification or compliance.
-    status: todo
-
-  - title: Change Management Policy
-    instruction: >-
-      Draft a practical Change Management Policy for a small UK organisation.
-      Cover change requests, risk assessment, approvals, testing, segregation
-      of duties, emergency changes, implementation, rollback, documentation,
-      security review, post-implementation review and record keeping. Use
-      recognised information security and service management concepts where
-      appropriate. Do not claim certification or compliance. Mark
-      organisation-specific information as [[PLACEHOLDER]]. Require human
-      review and organisational approval.
-    status: todo
-
-  - title: Security Awareness and Training Policy
-    instruction: >-
-      Draft a practical Security Awareness and Training Policy for a small UK
-      organisation. Cover induction, annual refresher training, phishing,
-      passwords and MFA, data protection, incident reporting, social
-      engineering, remote working, role-specific training, contractors and
-      volunteers, training records, effectiveness measurement and review.
-      Use UK NCSC and relevant public guidance. Do not claim certification or
-      compliance. Mark organisation-specific information as [[PLACEHOLDER]].
-      Require human review and organisational approval.
-    status: todo
-
-  - title: Third-Party Risk Assessment Template
-    instruction: >-
-      Create a practical Third-Party Risk Assessment Template for a small UK
-      organisation. Include supplier profile, service criticality, information
-      accessed, personal data processing, security controls, access management,
-      hosting location, sub-processors, incident management, business
-      continuity, certifications or assurance evidence, contractual controls,
-      inherent risk, residual risk, treatment actions, owner, approval and
-      review frequency. Do not invent supplier information. Use
-      [[PLACEHOLDER]] where organisation-specific information is required.
-    status: todo
-
-  - title: Compliance Monitoring and Review Checklist
-    instruction: >-
-      Create a practical Compliance Monitoring and Review Checklist for a
-      small UK organisation. Cover policies, risk management, data protection,
-      access control, incident management, supplier assurance, vulnerability
-      management, business continuity, staff training, records, evidence,
-      corrective actions, owners, deadlines and management reporting.
-      Distinguish between evidence reviewed, findings, actions and approval.
-      Do not claim compliance or certification. Mark organisation-specific
-      requirements as [[PLACEHOLDER]] and require human review.
-    status: todo
+- title: UK GDPR Data Protection Impact Assessment Template
+  instruction: Write a practical DPIA template for a small UK organisation, aligned
+    to UK GDPR and ICO guidance, with guidance notes in each section.
+  status: drafted
+- title: Incident Response Policy
+  instruction: Draft a practical Incident Response Policy for a small organisation.
+    Include purpose and scope, definitions, document control, roles and responsibilities,
+    reporting and escalation, external support contacts, severity classification,
+    triage, containment, investigation, evidence preservation, eradication, recovery,
+    personal data breach assessment, regulatory notification, communications, post-incident
+    review, lessons learned, corrective actions, record retention, testing and policy
+    review. Use publicly available guidance from NIST CSF 2.0, NIST SP 800-61 and
+    UK NCSC where appropriate. Do not claim certification or compliance. Do not invent
+    organisation-specific information. Mark unknown information as [[PLACEHOLDER]].
+    Flag jurisdiction-dependent legal requirements for human review. Suggested response
+    targets must require organisational approval. Clearly state that this is an AI-assisted
+    draft pending human review and that human approval is required before adoption.
+  status: drafted
+- title: Acceptable Use Policy
+  instruction: Write a clear acceptable use policy for staff and volunteers covering
+    devices, accounts, email and social media.
+  status: drafted
+- title: AI Governance Policy
+  instruction: Write an AI governance policy for a small organisation, aligned to
+    NIST AI RMF, covering approved use, human review and data protection.
+  status: drafted
+- title: Information Security Risk Register Template
+  instruction: Create a risk register template with scoring guidance and 10 example
+    risks for a small UK organisation.
+  status: drafted
+- title: Information Security Policy
+  instruction: Draft a practical Information Security Policy for a small UK organisation.
+    Cover governance, information security responsibilities, access control, asset
+    management, data protection, incident management, supplier security, business
+    continuity, training, monitoring and policy review. Use public guidance from UK
+    NCSC, ISO/IEC 27001 concepts and CIS Controls where appropriate. Do not claim
+    certification or compliance. Mark unknown organisation-specific information as
+    [[PLACEHOLDER]]. Clearly state that this is an AI-assisted draft pending human
+    review.
+  status: drafted
+- title: Access Control Policy
+  instruction: Draft a practical Access Control Policy for a small UK organisation.
+    Cover user access, least privilege, joiners movers and leavers, privileged accounts,
+    authentication, MFA, password management, access reviews, remote access, third-party
+    access, shared accounts, logging, exceptions and periodic review. Use public guidance
+    from UK NCSC, Cyber Essentials, ISO/IEC 27001 concepts and CIS Controls where
+    appropriate. Do not claim certification or compliance. Mark unknown organisation-specific
+    information as [[PLACEHOLDER]]. Require human review and organisational approval
+    before operational use.
+  status: drafted
+- title: Data Protection Policy
+  instruction: Draft a practical Data Protection Policy for a small UK organisation.
+    Cover UK GDPR principles, accountability, lawful basis, transparency, individual
+    rights, special category data, data minimisation, accuracy, retention, security,
+    processors, international transfers, personal data breaches, DPIAs, training and
+    policy review. Use ICO and UK data protection guidance where appropriate. Do not
+    claim compliance. Mark organisation-specific information as [[PLACEHOLDER]]. Require
+    human review and organisational approval before operational use.
+  status: todo
+- title: Supplier Security Policy
+  instruction: Draft a practical Supplier Security Policy for a small UK organisation.
+    Cover supplier due diligence, information security requirements, contracts, data
+    processing, access control, sub-processors, incident notification, vulnerability
+    management, service continuity, monitoring, reassessment, termination and offboarding.
+    Use public guidance from UK NCSC, ISO/IEC 27001 concepts and relevant data protection
+    guidance. Do not claim certification or compliance. Mark unknown information as
+    [[PLACEHOLDER]]. Require human review and organisational approval.
+  status: todo
+- title: Business Continuity and Disaster Recovery Policy
+  instruction: Draft a practical Business Continuity and Disaster Recovery Policy
+    for a small UK organisation. Cover critical services, business impact, recovery
+    priorities, backups, recovery objectives, roles, emergency communications, alternative
+    working arrangements, cyber incidents, supplier dependencies, testing, exercises,
+    lessons learned and review. Do not invent organisation-specific recovery targets.
+    Mark them as [[PLACEHOLDER]]. Use relevant UK NCSC and recognised continuity guidance.
+    Require human review and organisational approval before operational use.
+  status: todo
+- title: Data Retention and Secure Disposal Policy
+  instruction: Draft a practical Data Retention and Secure Disposal Policy for a small
+    UK organisation. Cover personal data, business records, security logs, contracts,
+    HR records, financial information, backups, legal holds, retention schedules,
+    deletion, destruction, disposal of devices and media, responsibilities, exceptions
+    and review. Use ICO and UK data protection guidance where appropriate. Do not
+    invent legal retention periods. Mark uncertain or organisation-specific periods
+    as [[PLACEHOLDER]]. Require human review and organisational approval.
+  status: todo
+- title: Vulnerability Management Policy
+  instruction: Draft a practical Vulnerability Management Policy for a small UK organisation.
+    Cover asset identification, vulnerability scanning, security updates, patching,
+    severity assessment, prioritisation, remediation, exceptions, unsupported software,
+    third-party systems, verification, metrics, reporting and review. Use public UK
+    NCSC, Cyber Essentials and CIS Controls guidance where appropriate. Suggested
+    remediation targets must require organisational approval. Mark unknown information
+    as [[PLACEHOLDER]]. Do not claim certification or compliance.
+  status: todo
+- title: Change Management Policy
+  instruction: Draft a practical Change Management Policy for a small UK organisation.
+    Cover change requests, risk assessment, approvals, testing, segregation of duties,
+    emergency changes, implementation, rollback, documentation, security review, post-implementation
+    review and record keeping. Use recognised information security and service management
+    concepts where appropriate. Do not claim certification or compliance. Mark organisation-specific
+    information as [[PLACEHOLDER]]. Require human review and organisational approval.
+  status: todo
+- title: Security Awareness and Training Policy
+  instruction: Draft a practical Security Awareness and Training Policy for a small
+    UK organisation. Cover induction, annual refresher training, phishing, passwords
+    and MFA, data protection, incident reporting, social engineering, remote working,
+    role-specific training, contractors and volunteers, training records, effectiveness
+    measurement and review. Use UK NCSC and relevant public guidance. Do not claim
+    certification or compliance. Mark organisation-specific information as [[PLACEHOLDER]].
+    Require human review and organisational approval.
+  status: todo
+- title: Third-Party Risk Assessment Template
+  instruction: Create a practical Third-Party Risk Assessment Template for a small
+    UK organisation. Include supplier profile, service criticality, information accessed,
+    personal data processing, security controls, access management, hosting location,
+    sub-processors, incident management, business continuity, certifications or assurance
+    evidence, contractual controls, inherent risk, residual risk, treatment actions,
+    owner, approval and review frequency. Do not invent supplier information. Use
+    [[PLACEHOLDER]] where organisation-specific information is required.
+  status: todo
+- title: Compliance Monitoring and Review Checklist
+  instruction: Create a practical Compliance Monitoring and Review Checklist for a
+    small UK organisation. Cover policies, risk management, data protection, access
+    control, incident management, supplier assurance, vulnerability management, business
+    continuity, staff training, records, evidence, corrective actions, owners, deadlines
+    and management reporting. Distinguish between evidence reviewed, findings, actions
+    and approval. Do not claim compliance or certification. Mark organisation-specific
+    requirements as [[PLACEHOLDER]] and require human review.
+  status: todo
