@@ -1,120 +1,322 @@
 # GRC & Digital Trust Portfolio
 
-## Sodeeq Ipadeola Olalekan
+## TrustReady GRC
 
-**Digital Trust | Cybersecurity Governance | Risk | Compliance**
+**Sodeeq Ipadeola Olalekan**  
+Digital Trust | Cybersecurity Governance | Risk | Compliance
 
-This repository contains practical Governance, Risk and Compliance (GRC) artefacts developed as part of my professional portfolio.
+TrustReady GRC is a practical Governance, Risk and Compliance portfolio designed to demonstrate how regulatory requirements, cybersecurity controls, evidence, risk and compliance assessments can be translated into structured and increasingly automated processes.
 
-The documents are designed primarily for small organisations, SMEs, charities and community organisations. They demonstrate practical approaches to information security governance, data protection, risk management, incident response and responsible AI governance.
-
-> **Portfolio Notice**
->
-> The documents in this repository are portfolio drafts. They are not presented as formally adopted organisational policies, legal advice, certification evidence or proof of regulatory compliance. Organisation-specific placeholders must be completed, and each document should be reviewed and formally approved before operational use.
+The project goes beyond static policy documentation by combining governance artefacts with machine-readable controls, cross-framework mapping, assessment logic and automated repository validation.
 
 ---
 
-## Portfolio Artefacts
+## Project Objectives
 
-| Artefact | Purpose | Status | Document |
-|---|---|---|---|
-| Information Security Policy | Overall information security governance, responsibilities and security expectations. | Human reviewed – portfolio draft | [View Policy](pieces/information-security-policy/draft.md) |
-| Incident Response Policy | Preparation, detection, containment, investigation, recovery and post-incident review. | Human reviewed – portfolio draft | [View Policy](pieces/incident-response-policy/draft.md) |
-| Acceptable Use Policy | Acceptable use of devices, accounts, email, internet services and social media. | Human reviewed – portfolio draft | [View Policy](pieces/acceptable-use-policy/draft.md) |
-| AI Governance Policy | Responsible AI use, human oversight, risk management, data protection and accountability. | Human reviewed – portfolio draft | [View Policy](pieces/ai-governance-policy/draft.md) |
-| Access Control Policy | User access, least privilege, privileged accounts, MFA, access reviews and joiner-mover-leaver controls. | Human reviewed – portfolio draft | [View Policy](pieces/access-control-policy/draft.md) |
-| Data Protection Policy | UK GDPR governance, lawful processing, individual rights, security, retention and data breaches. | Human reviewed – portfolio draft | [View Policy](pieces/data-protection-policy/draft.md) |
-| Supplier Security Policy | Security governance, due diligence and ongoing oversight of suppliers and third parties. | Human reviewed – portfolio draft | [View Policy](pieces/supplier-security-policy/draft.md) |
-| Business Continuity and Disaster Recovery Policy | Business impact, critical services, recovery priorities, resilience, testing and restoration. | Human reviewed – portfolio draft | [View Policy](pieces/business-continuity-and-disaster-recovery-policy/draft.md) |
-| Data Retention and Secure Disposal Policy | Retention, deletion, destruction, legal holds, secure disposal and records governance. | Human reviewed – portfolio draft | [View Policy](pieces/data-retention-and-secure-disposal-policy/draft.md) |
-| Vulnerability Management Policy | Vulnerability identification, prioritisation, remediation, patching, exceptions and reporting. | Human reviewed – portfolio draft | [View Policy](pieces/vulnerability-management-policy/draft.md) |
-| Change Management Policy | Controlled change requests, risk assessment, testing, approvals, rollback and post-implementation review. | Human reviewed – portfolio draft | [View Policy](pieces/change-management-policy/draft.md) |
-| Security Awareness and Training Policy | Security induction, refresher training, phishing awareness, incident reporting and training governance. | Human reviewed – portfolio draft | [View Policy](pieces/security-awareness-and-training-policy/draft.md) |
-| Information Security Risk Register Template | Structured information security risk assessment, scoring, ownership and treatment tracking. | Human reviewed – portfolio template | [View Risk Register](pieces/information-security-risk-register-template/draft.md) |
-| UK GDPR Data Protection Impact Assessment Template | Structured assessment of privacy risks associated with new or changed personal-data processing. | Human reviewed – portfolio template | [View DPIA](pieces/uk-gdpr-data-protection-impact-assessment-template/draft.md) |
-| Third-Party Risk Assessment Template | Evidence-based supplier security, privacy, resilience, contractual and residual-risk assessment. | Human reviewed – portfolio template | [View Assessment](pieces/third-party-risk-assessment-template/draft.md) |
-| Compliance Monitoring and Review Checklist | Periodic monitoring of governance, risk, security, privacy, evidence, findings and corrective actions. | Human reviewed – portfolio checklist | [View Checklist](pieces/compliance-monitoring-and-review-checklist/draft.md) |
+TrustReady GRC is designed to explore how organisations, particularly SMEs and mission-led organisations, can:
+
+- understand their compliance obligations;
+- assess their current control environment;
+- identify compliance and security gaps;
+- connect regulatory requirements to practical controls;
+- identify appropriate evidence for implemented controls;
+- prioritise remediation based on risk;
+- reuse evidence across related frameworks;
+- improve consistency through automation; and
+- build stronger digital trust.
 
 ---
 
-### Human Review Records
+## Current Capabilities
 
-Each artefact includes a separate `review.md` file documenting the human quality review performed before the artefact was accepted into the main portfolio.
+The repository currently includes:
 
-These artefacts are portfolio drafts and templates. They do not represent certification, legal advice or proof of organisational compliance. Organisation-specific placeholders must be completed and appropriate approval obtained before operational use.
+### 1. GRC Artefact Portfolio
 
----
+The `pieces/` directory contains **16 practical GRC artefacts**, including policies, governance documents, compliance tools and assessment templates.
 
-## Governance Workflow
-
-The portfolio follows a controlled document-development process:
-
-1. **Define requirement** – identify the required GRC artefact and its scope.
-2. **Draft** – produce a structured first draft using defined governance requirements and public guidance.
-3. **Completeness check** – confirm the document has not been truncated or left incomplete.
-4. **Human review** – review content, governance controls, placeholders and regulatory claims.
-5. **Review record** – document checks performed, outstanding actions and review outcome.
-6. **Pull request** – present the draft and review evidence for controlled acceptance.
-7. **Merge to main** – only reviewed artefacts are retained in the main portfolio.
-
-This creates a visible audit trail between drafting, review and portfolio acceptance.
+These artefacts are designed to demonstrate how governance requirements can be translated into usable organisational documentation.
 
 ---
 
-## Areas Demonstrated
+### 2. Machine-Readable Control Library
 
-- Information Security Governance
-- Governance, Risk and Compliance (GRC)
-- Digital Trust
-- Cybersecurity Policy
-- Information Security Risk Management
-- UK GDPR and Data Protection
-- Data Protection Impact Assessments
-- Incident Response Governance
-- Responsible AI and AI Governance
-- Policy Development and Review
-- Control Design and Assurance
+The `controls/` directory contains a structured control library covering areas including:
 
----
+- UK GDPR;
+- Cyber Essentials;
+- governance and accountability;
+- lawful processing;
+- security of personal data;
+- secure configuration;
+- vulnerability management;
+- user access control;
+- multi-factor authentication; and
+- malware protection.
 
-## Reference Frameworks and Guidance
+Each control can include information such as:
 
-Portfolio artefacts draw on relevant publicly available concepts and guidance including:
+- unique control ID;
+- framework;
+- control domain;
+- requirement;
+- evidence expectations;
+- risk severity;
+- assessment question; and
+- automation potential.
 
-- UK National Cyber Security Centre (NCSC)
-- Information Commissioner's Office (ICO)
-- UK GDPR
-- Data Protection Act 2018
-- NIST Cybersecurity Framework
-- NIST AI Risk Management Framework
-- NIST incident-response guidance
-- ISO/IEC 27001 concepts
-- CIS Controls
-- Cyber Essentials principles
-
-References to these frameworks do **not** constitute certification, accreditation or a claim of conformity.
+This allows compliance requirements to be processed programmatically rather than existing only as written policies.
 
 ---
 
-## Portfolio Development
+### 3. Cross-Framework Mapping
 
-Additional artefacts will be developed across areas including:
+The `mappings/` directory contains mappings between UK GDPR and Cyber Essentials controls.
 
-- Access Control
-- Data Protection
-- Vulnerability Management
-- Supplier Security
-- Business Continuity and Disaster Recovery
-- Data Retention and Disposal
-- Change Management
-- Security Awareness
-- Third-Party Risk Assessment
-- Compliance Monitoring
+This demonstrates how one technical control or evidence item may support multiple governance or compliance requirements.
+
+For example:
+
+```text
+UK GDPR Security Requirement
+            ↓
+TrustReady Control
+            ↓
+Cyber Essentials Controls
+            ↓
+Technical Evidence
+```
+
+Cross-framework mapping can help reduce duplicated compliance work while preserving the distinction between different regulatory and certification requirements.
 
 ---
 
-## Author
+### 4. Compliance Assessment Engine
 
-**Sodeeq Ipadeola Olalekan**
+The repository contains a Python-based assessment engine in:
 
-Digital Trust | Cybersecurity Governance | GRC | Responsible AI | Policy & Assurance
+```text
+scripts/assessment_engine.py
+```
+
+The engine reads the structured control library and supports assessment statuses such as:
+
+```text
+Compliant
+Partially Compliant
+Non-Compliant
+Not Applicable
+```
+
+It then uses control severity to calculate a weighted compliance score and identify priority gaps.
+
+Example workflow:
+
+```text
+Control Library
+      ↓
+Assessment Questions
+      ↓
+Organisation Responses
+      ↓
+Severity Weighting
+      ↓
+Compliance Score
+      ↓
+Priority Gaps
+```
+
+---
+
+### 5. Automated GRC Validation
+
+TrustReady includes an automated GitHub Actions validation workflow:
+
+```text
+.github/workflows/grc-validation.yml
+```
+
+The workflow automatically validates important components of the repository.
+
+Checks currently include:
+
+- required project components;
+- Python syntax;
+- control-library structure;
+- required control fields;
+- duplicate control IDs;
+- valid severity classifications;
+- evidence requirements;
+- cross-framework mappings;
+- references to valid controls;
+- GRC artefact presence;
+- empty artefact detection; and
+- assessment scoring logic.
+
+The automated validation workflow is currently passing successfully.
+
+---
+
+## Repository Structure
+
+```text
+grc-portfolio/
+│
+├── .github/
+│   └── workflows/
+│       ├── grc-validation.yml
+│       └── weekly-draft.yml
+│
+├── controls/
+│   └── control-library.yml
+│
+├── mappings/
+│   └── ukgdpr-cyberessentials.yml
+│
+├── pieces/
+│   └── GRC artefacts and templates
+│
+├── scripts/
+│   ├── assessment_engine.py
+│   └── draft.py
+│
+├── README.md
+├── queue.yml
+└── requirements.txt
+```
+
+---
+
+## Compliance Model
+
+TrustReady currently follows this model:
+
+```text
+Regulation / Framework
+          ↓
+Structured Controls
+          ↓
+Cross-Framework Mapping
+          ↓
+Assessment
+          ↓
+Evidence
+          ↓
+Risk Prioritisation
+          ↓
+Remediation
+          ↓
+Continuous Validation
+```
+
+The long-term aim is to develop this further into a lightweight compliance-as-code approach suitable for organisations that need practical GRC capability without unnecessarily complex enterprise tooling.
+
+---
+
+## Frameworks
+
+Current work focuses primarily on:
+
+- **UK GDPR**
+- **Cyber Essentials**
+
+Future development may extend the control-mapping model to areas such as:
+
+- ISO/IEC 27001;
+- NIST Cybersecurity Framework;
+- supplier risk;
+- privacy impact assessment;
+- incident management;
+- business continuity; and
+- broader digital trust governance.
+
+---
+
+## Running the Assessment Engine
+
+Install the required Python dependency:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then run:
+
+```bash
+python scripts/assessment_engine.py
+```
+
+The assessment engine reads the control library and produces a weighted compliance assessment based on the responses provided.
+
+---
+
+## Automated Validation
+
+The repository uses GitHub Actions to validate the GRC project automatically.
+
+Validation runs when relevant changes are made to areas such as:
+
+```text
+controls/
+mappings/
+pieces/
+scripts/
+requirements.txt
+```
+
+The workflow can also be triggered manually through GitHub Actions.
+
+---
+
+## Development Approach
+
+TrustReady is being developed incrementally.
+
+The project uses:
+
+- structured control design;
+- version-controlled governance artefacts;
+- machine-readable YAML;
+- Python-based compliance logic;
+- automated validation;
+- cross-framework mapping; and
+- evidence-driven GRC thinking.
+
+The development history and commits provide a transparent record of how the project has evolved.
+
+---
+
+## Roadmap
+
+Planned development areas include:
+
+- expanded control library;
+- ISO/IEC 27001 mapping;
+- NIST CSF mapping;
+- structured evidence register;
+- risk register engine;
+- automated remediation recommendations;
+- compliance dashboard;
+- control ownership and review tracking;
+- evidence-expiry monitoring;
+- policy review automation;
+- additional automated control checks; and
+- external testing and practitioner contribution.
+
+---
+
+## Important Notice
+
+TrustReady GRC is a professional portfolio and experimental GRC implementation project.
+
+It is not legal advice, does not replace professional regulatory advice, and does not itself provide certification against any referenced framework.
+
+Cross-framework mappings indicate practical relationships between controls and evidence. They do not imply regulatory or certification equivalence.
+
+---
+
+## Contributions and Feedback
+
+Professional feedback, testing and constructive contributions are welcome.
+
+The project is intended to develop through practical use, peer review and continued improvement in digital trust, cybersecurity governance, risk and compliance.
