@@ -225,3 +225,17 @@ The policy owner reports results to [[PLACEHOLDER: senior management/board]] at 
 - [ ] Training tools and providers selected
 - [ ] Retention periods confirmed
 - [ ] Approval route and date recorded by the organisation
+
+## Appendix C: Approval record
+
+| Item | Detail |
+|---|---|
+| Reviewed by | [[PLACEHOLDER: name, role, date]] |
+| Approved by | [[PLACEHOLDER: authorised approver, role, date]] |
+| Effective date | [[PLACEHOLDER]] |
+| Next review date | [[PLACEHOLDER]] |
+| Version | [[PLACEHOLDER]] |
+
+This policy remains a draft until all required placeholders are completed, training arrangements are confirmed, and formal organisational approval is recorded.
+
+**END OF DRAFT – PENDING HUMAN REVIEW AND ORGANISATIONAL APPROVAL**
