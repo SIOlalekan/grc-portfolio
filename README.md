@@ -29,6 +29,32 @@ TrustReady GRC is designed to explore how UK SMEs, Charities and Community Inter
 
 ---
 
+## GRC Artefact Portfolio
+
+TrustReady GRC currently includes 16 practical Governance, Risk and Compliance artefacts designed for use by UK SMEs, charities and Community Interest Companies (CICs).
+
+| Policy / Artefact | Area | Link |
+|---|---|---|
+| Information Security Policy | Information Security Governance | [View Policy](pieces/information-security-policy/draft.md) |
+| Incident Response Policy | Incident Management | [View Policy](pieces/incident-response-policy/draft.md) |
+| Acceptable Use Policy | Security Governance | [View Policy](pieces/acceptable-use-policy/draft.md) |
+| AI Governance Policy | Responsible AI / Digital Trust | [View Policy](pieces/ai-governance-policy/draft.md) |
+| Access Control Policy | Identity and Access Management | [View Policy](pieces/access-control-policy/draft.md) |
+| Data Protection Policy | Privacy / UK GDPR | [View Policy](pieces/data-protection-policy/draft.md) |
+| Supplier Security Policy | Third-Party Risk | [View Policy](pieces/supplier-security-policy/draft.md) |
+| Business Continuity and Disaster Recovery Policy | Business Resilience | [View Policy](pieces/business-continuity-and-disaster-recovery-policy/draft.md) |
+| Data Retention and Secure Disposal Policy | Information Lifecycle | [View Policy](pieces/data-retention-and-secure-disposal-policy/draft.md) |
+| Vulnerability Management Policy | Cybersecurity Risk | [View Policy](pieces/vulnerability-management-policy/draft.md) |
+| Change Management Policy | Change and Configuration Governance | [View Policy](pieces/change-management-policy/draft.md) |
+| Security Awareness and Training Policy | People / Security Awareness | [View Policy](pieces/security-awareness-and-training-policy/draft.md) |
+| Information Security Risk Register Template | Risk Management | [View Artefact](pieces/information-security-risk-register-template/draft.md) |
+| UK GDPR Data Protection Impact Assessment Template | Privacy Risk / DPIA | [View Artefact](pieces/uk-gdpr-data-protection-impact-assessment-template/draft.md) |
+| Third-Party Risk Assessment Template | Supplier / Third-Party Risk | [View Artefact](pieces/third-party-risk-assessment-template/draft.md) |
+| Compliance Monitoring and Review Checklist | Compliance Assurance | [View Artefact](pieces/compliance-monitoring-and-review-checklist/draft.md) |
+
+These artefacts form the governance and evidence layer of TrustReady GRC and are complemented by the machine-readable control library, framework mappings, assessment engine and automated validation workflow.
+---
+
 ## Current Capabilities
 
 The repository currently includes:
