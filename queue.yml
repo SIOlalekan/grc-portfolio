@@ -77,7 +77,7 @@ topics:
     lessons learned and review. Do not invent organisation-specific recovery targets.
     Mark them as [[PLACEHOLDER]]. Use relevant UK NCSC and recognised continuity guidance.
     Require human review and organisational approval before operational use.
-  status: todo
+  status: drafted
 - title: Data Retention and Secure Disposal Policy
   instruction: Draft a practical Data Retention and Secure Disposal Policy for a small
     UK organisation. Cover personal data, business records, security logs, contracts,
