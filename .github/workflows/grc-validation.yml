@@ -1,0 +1,326 @@
+name: TrustReady GRC Validation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "controls/**"
+      - "mappings/**"
+      - "pieces/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/grc-validation.yml"
+
+  pull_request:
+    paths:
+      - "controls/**"
+      - "mappings/**"
+      - "pieces/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/grc-validation.yml"
+
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate TrustReady GRC Repository
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check required project components
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          required_paths = [
+              Path("controls/control-library.yml"),
+              Path("mappings/ukgdpr-cyberessentials.yml"),
+              Path("pieces"),
+              Path("scripts/assessment_engine.py"),
+              Path("requirements.txt"),
+              Path("README.md"),
+          ]
+
+          missing = [
+              str(path)
+              for path in required_paths
+              if not path.exists()
+          ]
+
+          if missing:
+              print("Missing required project components:")
+              for item in missing:
+                  print(f" - {item}")
+              raise SystemExit(1)
+
+          print("SUCCESS: Required project components are present.")
+          PY
+
+      - name: Validate Python scripts
+        run: |
+          python -m py_compile scripts/assessment_engine.py
+
+          if [ -f scripts/draft.py ]; then
+            python -m py_compile scripts/draft.py
+          fi
+
+          echo "SUCCESS: Python syntax validation passed."
+
+      - name: Validate control library
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          path = Path("controls/control-library.yml")
+
+          with path.open("r", encoding="utf-8") as file:
+              data = yaml.safe_load(file)
+
+          if not isinstance(data, dict):
+              raise SystemExit(
+                  "ERROR: Control library must contain a YAML object."
+              )
+
+          controls = data.get("controls", [])
+
+          if not controls:
+              raise SystemExit(
+                  "ERROR: No controls found in control-library.yml."
+              )
+
+          required_fields = {
+              "control_id",
+              "framework",
+              "domain",
+              "title",
+              "requirement",
+              "evidence_required",
+              "severity",
+              "assessment_question",
+          }
+
+          valid_severities = {
+              "low",
+              "medium",
+              "high",
+              "critical",
+          }
+
+          seen_ids = set()
+
+          for control in controls:
+              control_id = control.get("control_id", "<unknown>")
+
+              missing = required_fields - set(control.keys())
+
+              if missing:
+                  raise SystemExit(
+                      f"ERROR: {control_id} is missing "
+                      f"required fields: {sorted(missing)}"
+                  )
+
+              if control_id in seen_ids:
+                  raise SystemExit(
+                      f"ERROR: Duplicate control ID: {control_id}"
+                  )
+
+              seen_ids.add(control_id)
+
+              severity = control.get("severity")
+
+              if severity not in valid_severities:
+                  raise SystemExit(
+                      f"ERROR: Invalid severity '{severity}' "
+                      f"in {control_id}"
+                  )
+
+              evidence = control.get("evidence_required")
+
+              if not isinstance(evidence, list) or not evidence:
+                  raise SystemExit(
+                      f"ERROR: {control_id} must contain "
+                      "at least one evidence requirement."
+                  )
+
+          print(
+              f"SUCCESS: {len(controls)} GRC controls validated."
+          )
+          PY
+
+      - name: Validate cross-framework mappings
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+
+          control_path = Path(
+              "controls/control-library.yml"
+          )
+
+          mapping_path = Path(
+              "mappings/ukgdpr-cyberessentials.yml"
+          )
+
+          with control_path.open(
+              "r",
+              encoding="utf-8"
+          ) as file:
+              control_data = yaml.safe_load(file)
+
+          with mapping_path.open(
+              "r",
+              encoding="utf-8"
+          ) as file:
+              mapping_data = yaml.safe_load(file)
+
+          control_ids = {
+              control["control_id"]
+              for control in control_data.get("controls", [])
+          }
+
+          mappings = mapping_data.get("mappings", [])
+
+          if not mappings:
+              raise SystemExit(
+                  "ERROR: No cross-framework mappings found."
+              )
+
+          for mapping in mappings:
+              source = mapping.get("source_control")
+
+              if source not in control_ids:
+                  raise SystemExit(
+                      f"ERROR: Unknown source control: {source}"
+                  )
+
+              targets = mapping.get(
+                  "target_controls",
+                  []
+              )
+
+              for target in targets:
+                  if target not in control_ids:
+                      raise SystemExit(
+                          f"ERROR: Unknown mapped control: {target}"
+                      )
+
+          print(
+              f"SUCCESS: {len(mappings)} "
+              "cross-framework mappings validated."
+          )
+          PY
+
+      - name: Validate GRC artefact portfolio
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          pieces = Path("pieces")
+
+          artefacts = [
+              file
+              for file in pieces.rglob("*")
+              if file.is_file()
+              and not file.name.startswith(".")
+          ]
+
+          print(
+              f"Artefacts detected in portfolio: {len(artefacts)}"
+          )
+
+          if len(artefacts) < 16:
+              raise SystemExit(
+                  "ERROR: Expected at least 16 GRC artefacts "
+                  f"but found {len(artefacts)}."
+              )
+
+          empty_files = [
+              str(file)
+              for file in artefacts
+              if file.stat().st_size == 0
+          ]
+
+          if empty_files:
+              print("Empty artefact files detected:")
+
+              for file in empty_files:
+                  print(f" - {file}")
+
+              raise SystemExit(
+                  "ERROR: One or more GRC artefacts are empty."
+              )
+
+          print(
+              "SUCCESS: GRC artefact portfolio validation passed."
+          )
+          PY
+
+      - name: Test assessment scoring logic
+        run: |
+          python - <<'PY'
+          from scripts.assessment_engine import calculate_score
+
+          sample_results = [
+              {
+                  "severity": "critical",
+                  "status": "compliant",
+              },
+              {
+                  "severity": "high",
+                  "status": "partially_compliant",
+              },
+              {
+                  "severity": "medium",
+                  "status": "non_compliant",
+              },
+              {
+                  "severity": "low",
+                  "status": "not_applicable",
+              },
+          ]
+
+          score = calculate_score(sample_results)
+
+          if not isinstance(score, (int, float)):
+              raise SystemExit(
+                  "ERROR: Assessment engine did not "
+                  "return a numeric score."
+              )
+
+          if score < 0 or score > 100:
+              raise SystemExit(
+                  f"ERROR: Invalid compliance score: {score}"
+              )
+
+          print(
+              f"SUCCESS: Assessment engine test score = {score}%"
+          )
+          PY
+
+      - name: Validation summary
+        run: |
+          echo "=========================================="
+          echo "TRUSTREADY GRC VALIDATION PASSED"
+          echo "=========================================="
+          echo "Control library: PASSED"
+          echo "Framework mappings: PASSED"
+          echo "Python engine: PASSED"
+          echo "GRC artefacts: PASSED"
+          echo "Repository structure: PASSED"
+          echo "=========================================="
