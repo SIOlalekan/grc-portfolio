@@ -68,7 +68,7 @@ topics:
     Use public guidance from UK NCSC, ISO/IEC 27001 concepts and relevant data protection
     guidance. Do not claim certification or compliance. Mark unknown information as
     [[PLACEHOLDER]]. Require human review and organisational approval.
-  status: todo
+  status: drafted
 - title: Business Continuity and Disaster Recovery Policy
   instruction: Draft a practical Business Continuity and Disaster Recovery Policy
     for a small UK organisation. Cover critical services, business impact, recovery
