@@ -40,7 +40,8 @@ topics:
     certification or compliance. Mark unknown organisation-specific information as
     [[PLACEHOLDER]]. Clearly state that this is an AI-assisted draft pending human
     review.
-  status: drafted
+    status: drafted
+
   - title: "Access Control Policy"
     instruction: >-
       Draft a practical Access Control Policy for a small UK organisation.
