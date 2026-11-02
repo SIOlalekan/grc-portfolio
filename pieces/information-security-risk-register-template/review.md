@@ -4,7 +4,7 @@ Reviewed by: Sodeeq Ipadeola Olalekan
 Date: 2026-10-29
 
 Review performed:
-Reviewed the AI-assisted Information Security Risk Register Template for completeness, risk-scoring methodology, governance structure, example risks, placeholders and suitability for a small organisation.
+Reviewed the Information Security Risk Register Template for completeness, risk-scoring methodology, governance structure, example risks, placeholders and suitability for a small organisation.
 
 Checks completed:
 
