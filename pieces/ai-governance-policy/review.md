@@ -4,7 +4,7 @@ Reviewed by: Sodeeq Ipadeola Olalekan
 Date: 2026-10-29
 
 Review performed:
-Reviewed the AI-assisted AI Governance Policy for completeness, governance structure, human oversight, risk management, data protection, monitoring, placeholders and alignment with recognised AI governance principles.
+Reviewed the AI Governance Policy for completeness, governance structure, human oversight, risk management, data protection, monitoring, placeholders and alignment with recognised AI governance principles.
 
 Checks completed:
 
