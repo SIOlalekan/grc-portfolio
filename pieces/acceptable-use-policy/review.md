@@ -4,7 +4,7 @@ Reviewed by: Sodeeq Ipadeola Olalekan
 Date: 2026-10-29
 
 Review performed:
-Reviewed the AI-assisted Acceptable Use Policy for completeness, clarity, governance controls, placeholders and coverage of staff and volunteer technology use.
+Reviewed the Acceptable Use Policy for completeness, clarity, governance controls, placeholders and coverage of staff and volunteer technology use.
 
 Checks completed:
 
