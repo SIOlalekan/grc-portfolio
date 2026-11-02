@@ -3,7 +3,7 @@ Reviewed by: Sodeeq Ipadeola Olalekan
 Date: 2026-10-29
 
 Review performed:
-Reviewed the AI-assisted Incident Response Policy for completeness, structure, governance wording, placeholders, and coverage of the requested incident response lifecycle.
+Reviewed the Incident Response Policy for completeness, structure, governance wording, placeholders, and coverage of the requested incident response lifecycle.
 
 Checks completed:
 
