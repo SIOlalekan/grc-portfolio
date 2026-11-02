@@ -4,7 +4,7 @@
 **Date:** 2026-10-29
 
 **Review performed:**  
-Reviewed the AI-assisted Information Security Policy for completeness, governance structure, security responsibilities, access control, asset management, data protection, incident management, supplier security, business continuity, monitoring, training and policy review.
+Reviewed the Information Security Policy for completeness, governance structure, security responsibilities, access control, asset management, data protection, incident management, supplier security, business continuity, monitoring, training and policy review.
 
 **Checks completed:**  
 - Confirmed the document is complete and does not end mid-section.
